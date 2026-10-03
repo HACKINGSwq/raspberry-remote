@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raspberry Remote – PC & Handy sicher verbinden</title>
+  <meta name="description" content="Verbinde deinen PC und dein Handy in Sekunden. Screen Mirroring, Fernsteuerung, Datei-Transfer und mehr. Sicher, schnell und einfach.">
+  <meta name="theme-color" content="#7c3aed">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fas fa-raspberry-pi"></i></div>
+        <span>Raspberry Remote</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#connect">Verbinden</a>
+        <a href="#download">Download</a>
+        <a href="#sponsors">Partner</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#download" class="btn btn-primary btn-sm">Apps herunterladen</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <div class="badge">Neu · Version 2.0</div>
+        <h1>PC und Handy.<br><span>Endlich richtig verbunden.</span></h1>
+        <p class="hero-sub">
+          Screen Mirroring, Fernsteuerung, Datei-Transfer und Power-Control – 
+          alles über eine sichere Verbindung. Funktioniert über 4 verschiedene Methoden.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary btn-lg">
+            <i class="fas fa-download"></i> Jetzt herunterladen
+          </a>
+          <a href="#connect" class="btn btn-outline btn-lg">
+            <i class="fas fa-play"></i> So funktioniert’s
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>4</strong><span>Verbindungsmethoden</span></div>
+          <div><strong>End-to-End</strong><span>Verschlüsselt</span></div>
+          <div><strong>Windows · macOS · Android · iOS</strong><span>Plattformen</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="device-mockup desktop-mock">
+          <div class="mock-header">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-sidebar"></div>
+            <div class="mock-content">
+              <div class="mock-bar"></div>
+              <div class="mock-bar short"></div>
+              <div class="mock-screen">
+                <i class="fas fa-desktop"></i>
+                <span>Screen Mirror aktiv</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="device-mockup phone-mock">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">
+              <span>9:41</span>
+              <i class="fas fa-signal"></i>
+            </div>
+            <div class="phone-app">
+              <i class="fas fa-link"></i>
+              <p>Verbunden</p>
+              <div class="phone-btns">
+                <span>Access</span>
+                <span>Control</span>
+                <span>View</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SPONSORS / TRUST -->
+  <section class="sponsors-bar" id="sponsors">
+    <div class="container">
+      <p class="sponsors-label">Unterstützt & empfohlen von</p>
+      <div class="sponsors-logos">
+        <div class="sponsor">
+          <i class="fab fa-microsoft"></i>
+          <span>Microsoft</span>
+        </div>
+        <div class="sponsor">
+          <i class="fab fa-google"></i>
+          <span>Google</span>
+        </div>
+        <div class="sponsor">
+          <i class="fab fa-apple"></i>
+          <span>Apple</span>
+        </div>
+        <div class="sponsor">
+          <i class="fab fa-amazon"></i>
+          <span>AWS</span>
+        </div>
+        <div class="sponsor">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="sponsor">
+          <i class="fas fa-cloud"></i>
+          <span>Cloudflare</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Alles, was du brauchst</h2>
+        <p>Von schnellem Screen Mirroring bis zur vollständigen Fernsteuerung – in einer App.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-tv"></i></div>
+          <h3>Screen Mirroring</h3>
+          <p>Übertrage den PC-Bildschirm live aufs Handy – auch im Hintergrund und außerhalb der App.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-hand-pointer"></i></div>
+          <h3>Access Desktop</h3>
+          <p>Steuere den echten Desktop per Touch. Maus, Tastatur und Gesten – alles vom Handy aus.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-power-off"></i></div>
+          <h3>Control Desktop</h3>
+          <p>PC ein- und ausschalten, Neustart, Energiesparen und Windows-Updates starten.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-folder-open"></i></div>
+          <h3>Datei-Transfer</h3>
+          <p>Sende Dateien und Ordner blitzschnell zwischen Handy und PC – mit Fortschrittsanzeige.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-history"></i></div>
+          <h3>Session-Verlauf</h3>
+          <p>Behalte den Überblick über alle Verbindungen und Aktionen der letzten Tage.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Sicherheits-Center</h3>
+          <p>Aktive Sessions, Login-Verlauf und Sicherheitsoptionen an einem Ort.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-laptop"></i></div>
+          <h3>Geräte-Liste</h3>
+          <p>Verwalte mehrere PCs und Handys. Status, umbenennen und trennen – alles zentral.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-wifi"></i></div>
+          <h3>Offline-Hinweis</h3>
+          <p>Klare Meldung, wenn keine Verbindung besteht – und was trotzdem noch funktioniert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 CONNECTION METHODS -->
+  <section class="section section-alt" id="connect">
+    <div class="container">
+      <div class="section-header">
+        <h2>4 Wege, sich zu verbinden</h2>
+        <p>Wähle die Methode, die gerade am besten passt.</p>
+      </div>
+      <div class="methods-grid">
+        <div class="method-card">
+          <div class="method-num">1</div>
+          <div class="method-icon"><i class="fas fa-key"></i></div>
+          <h3>6-stelliger Code</h3>
+          <p>Ein Gerät generiert einen Code. Das andere gibt ihn ein. Fertig. Funktioniert überall.</p>
+        </div>
+        <div class="method-card">
+          <div class="method-num">2</div>
+          <div class="method-icon"><i class="fab fa-bluetooth-b"></i></div>
+          <h3>Bluetooth</h3>
+          <p>Beide Geräte in der Nähe? Einfach Bluetooth an und verbinden – kein Tippen nötig.</p>
+        </div>
+        <div class="method-card featured">
+          <div class="method-num">3</div>
+          <div class="method-icon"><i class="fas fa-qrcode"></i></div>
+          <h3>QR-Code scannen</h3>
+          <p>Am PC wird ein QR-Code angezeigt. Mit dem Handy scannen – und die Verbindung steht.</p>
+          <span class="method-badge">Neu</span>
+        </div>
+        <div class="method-card">
+          <div class="method-num">4</div>
+          <div class="method-icon"><i class="fas fa-link"></i></div>
+          <h3>Account-Link</h3>
+          <p>Einmal mit demselben Account anmelden. Danach verbinden sich die Geräte automatisch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>So einfach geht’s</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Apps herunterladen</h3>
+          <p>Desktop-App auf dem PC und Mobile-App auf dem Handy installieren.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Anmelden</h3>
+          <p>Mit E-Mail, Google oder Apple einloggen – auf beiden Geräten.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Verbinden</h3>
+          <p>Code, Bluetooth, QR-Code oder Account-Link – eine Methode reicht.</p>
+        </div>
+        <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Loslegen</h3>
+          <p>Access, Control, Mirror, Dateien – alles bereit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="section section-download" id="download">
+    <div class="container">
+      <div class="section-header light">
+        <h2>Apps herunterladen</h2>
+        <p>Die Website dient nur als Download-Portal. Die echte Funktion läuft über die nativen Apps.</p>
+      </div>
+      <div class="download-grid">
+        <div class="download-card">
+          <div class="download-icon"><i class="fab fa-windows"></i></div>
+          <h3>Windows</h3>
+          <p>Windows 10 & 11</p>
+          <a href="#" class="btn btn-primary" onclick="downloadApp('windows'); return false;">
+            <i class="fas fa-download"></i> Download (.exe)
+          </a>
+        </div>
+        <div class="download-card">
+          <div class="download-icon"><i class="fab fa-apple"></i></div>
+          <h3>macOS</h3>
+          <p>macOS 12 und neuer</p>
+          <a href="#" class="btn btn-primary" onclick="downloadApp('mac'); return false;">
+            <i class="fas fa-download"></i> Download (.dmg)
+          </a>
+        </div>
+        <div class="download-card">
+          <div class="download-icon"><i class="fab fa-linux"></i></div>
+          <h3>Linux</h3>
+          <p>Ubuntu, Fedora & mehr</p>
+          <a href="#" class="btn btn-primary" onclick="downloadApp('linux'); return false;">
+            <i class="fas fa-download"></i> Download (.AppImage)
+          </a>
+        </div>
+        <div class="download-card">
+          <div class="download-icon"><i class="fab fa-android"></i></div>
+          <h3>Android</h3>
+          <p>Android 10+</p>
+          <a href="#" class="btn btn-primary" onclick="downloadApp('android'); return false;">
+            <i class="fas fa-download"></i> Google Play
+          </a>
+        </div>
+        <div class="download-card">
+          <div class="download-icon"><i class="fab fa-apple"></i></div>
+          <h3>iPhone & iPad</h3>
+          <p>iOS 15+</p>
+          <a href="#" class="btn btn-primary" onclick="downloadApp('ios'); return false;">
+            <i class="fas fa-download"></i> App Store
+          </a>
+        </div>
+      </div>
+      <p class="download-note">
+        <i class="fas fa-info-circle"></i>
+        Die Desktop-App enthält den Agenten, der Screen-Mirroring, Power-Control und Hintergrund-Betrieb ermöglicht.
+        Die Mobile-App steuert und spiegelt.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECURITY -->
+  <section class="section">
+    <div class="container">
+      <div class="security-block">
+        <div class="security-text">
+          <h2>Sicherheit steht an erster Stelle</h2>
+          <ul>
+            <li><i class="fas fa-check"></i> Ende-zu-Ende-Verschlüsselung aller Streams</li>
+            <li><i class="fas fa-check"></i> Optionale Bestätigung jeder Session am PC</li>
+            <li><i class="fas fa-check"></i> Biometrische Freigabe auf dem Handy</li>
+            <li><i class="fas fa-check"></i> Kompletter Zugriffs- und Login-Verlauf</li>
+            <li><i class="fas fa-check"></i> Geräte-Limits und Remote-Trennung</li>
+          </ul>
+        </div>
+        <div class="security-visual">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Häufige Fragen</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Warum muss ich Apps herunterladen?</summary>
+          <p>Eine reine Website darf den Bildschirm und die Systemsteuerung eines PCs nicht dauerhaft und im Hintergrund kontrollieren. Dafür braucht es eine Desktop-App (Agent) und eine Mobile-App. Die Website ist das Download- und Info-Portal.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Funktioniert das auch, wenn der PC ausgeschaltet ist?</summary>
+          <p>Einschalten ist möglich, wenn Wake-on-LAN im BIOS aktiviert ist und der PC im Standby/Netzwerk erreichbar bleibt. Bei komplett vom Strom getrenntem PC geht das nicht.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Welche der 4 Verbindungsmethoden ist die beste?</summary>
+          <p>QR-Code ist am schnellsten, wenn beide Geräte vor dir liegen. Der 6-stellige Code funktioniert überall. Bluetooth ist praktisch in der Nähe. Account-Link ist ideal, wenn du die Geräte dauerhaft verknüpfen willst.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Ist die Verbindung sicher?</summary>
+          <p>Ja. Alle Streams sind ende-zu-ende verschlüsselt. Du kannst zusätzlich eine Bestätigung am PC verlangen und den kompletten Verlauf einsehen.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Kann ich mehrere PCs und Handys verbinden?</summary>
+          <p>Ja. Über die Geräte-Liste kannst du mehrere Geräte verwalten, umbenennen und trennen.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <h2>Bereit, PC und Handy zu verbinden?</h2>
+      <p>Lade die Apps herunter und starte in unter 2 Minuten.</p>
+      <a href="#download" class="btn btn-primary btn-lg">
+        <i class="fas fa-download"></i> Apps herunterladen
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon"><i class="fas fa-raspberry-pi"></i></div>
+          <span>Raspberry Remote</span>
+        </div>
+        <p>PC & Handy sicher verbinden.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Produkt</h4>
+          <a href="#features">Features</a>
+          <a href="#connect">Verbinden</a>
+          <a href="#download">Download</a>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+          <a href="#">Impressum</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#faq">FAQ</a>
+          <a href="#">Kontakt</a>
+          <a href="#">Status</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Raspberry Remote. Alle Rechte vorbehalten.</p>
+        <p class="disclaimer">Dies ist eine Demo-Produktseite. Die nativen Apps und die vollständige Funktionalität befinden sich in Entwicklung.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
